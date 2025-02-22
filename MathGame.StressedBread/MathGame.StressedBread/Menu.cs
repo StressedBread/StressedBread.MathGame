@@ -27,16 +27,16 @@ Q - Quit");
                         Helpers.PrintGames();
                         break;
                     case "a":
-                        engine.AdditionGame("Addition game");
+                        engine.GameLogic("Addition game", "+");
                         break;
                     case "s":
-                        engine.SubtractionGame("Subtraction game");
+                        engine.GameLogic("Subtraction game", "-");
                         break;
                     case "m":
-                        engine.MultiplicationGame("Multiplication game");
+                        engine.GameLogic("Multiplication game", "*");
                         break;
                     case "d":
-                        engine.DivisionGame("Division game");
+                        engine.GameLogic("Division game", "/");
                         break;
                     case "q":
                         Console.WriteLine("Quitting the program.");

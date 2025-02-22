@@ -1,5 +1,4 @@
 ﻿using MathGame.StressedBread.Models;
-using System.Linq;
 
 namespace MathGame.StressedBread
 {
@@ -28,6 +27,16 @@ namespace MathGame.StressedBread
                 Score = gameScore,
                 Type = gameType
             });
+        }
+        internal static int[] GetRandomNumbers()
+        {
+            Random random = new Random();
+            int firstNumber = random.Next(1, 9);
+            int secondNumber = random.Next(1, 9);
+
+            int[] result = [firstNumber, secondNumber];
+
+            return result;
         }
         internal static int[] GetDivisionNumbers()
         {
